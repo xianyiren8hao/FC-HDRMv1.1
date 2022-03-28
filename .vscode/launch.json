@@ -1,0 +1,44 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "主程序,client1",
+            "type": "python",
+            "request": "launch",
+            "program": "NN_main.py",
+            "args": [
+                "client"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "主程序,server1",
+            "type": "python",
+            "request": "launch",
+            "program": "NN_main.py",
+            "args": [
+                "server",
+                "--host",
+                "127.0.0.1"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "主程序,help",
+            "type": "python",
+            "request": "launch",
+            "program": "NN_main.py",
+            "args": [
+                "server",
+                "-h"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
