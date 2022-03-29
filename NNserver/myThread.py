@@ -103,9 +103,9 @@ class FC_Thread(Thread):
     def Dset_init(self):
         try:
             self.p.dset_train = MNIST(root=self.p.dset_path, train=True,
-                                    transform=self.p.dset_trans, download=False)
+                                    transform=self.p.dset_trans, download=True)
             self.p.dset_test = MNIST(root=self.p.dset_path, train=False,
-                                    transform=self.p.dset_trans, download=False)
+                                    transform=self.p.dset_trans, download=True)
         except Exception as e:
             print(e)
             self.p.dset_on = False
