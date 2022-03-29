@@ -1,6 +1,5 @@
 import torch.nn as nn
 from torch.nn import CrossEntropyLoss
-from torch import optim
 
 
 class FC_HDRM_Net(nn.Module):

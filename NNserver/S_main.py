@@ -1,4 +1,3 @@
-from ctypes import WinError
 from socket import socket, AF_INET, SO_REUSEADDR, SOCK_STREAM, SOL_SOCKET, timeout
 from NNserver.myThread import FC_Para
 from Data_Pack import myPack, myRecv
